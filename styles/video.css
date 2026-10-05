@@ -1,0 +1,138 @@
+      p {
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .thumbnail {
+        width: 100%;
+      }
+
+      
+
+      .videos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
+
+      @media (max-width: 850px) {
+        .videos-container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media(min-width: 851) and (max-width:999){
+         .videos-container {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+      @media(min-width: 1000px) {
+         .videos-container {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+      .pp {
+        width: 35px;
+        border-radius: 50px;
+      }
+
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .video-tt{
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        
+      }
+
+      
+
+      .video-author,
+      .video-stats {
+        font-size: 13px;
+        color: rgb(96, 96, 96);
+      }
+
+      .video-author {
+        margin-bottom: 4px;
+      }
+
+      .thumbnail-row {
+        margin-bottom: 8px;
+        position: relative;
+      }
+
+      .video-time {
+        position: absolute;
+        background-color: black;
+        padding: 3px 5px;
+        color: white;
+        right: 5px;
+        font-weight: 500;
+        bottom: 10px;
+        font-family: Roboto, Arial;
+        font-size: 14px;
+        opacity: 0.8;
+        border-radius: 5px;
+      }
+
+      .channel-pp {
+        display: flex;
+        position: relative;
+        align-items: baseline;
+      }
+
+      .profile-tip{
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: white;
+        display: grid;
+        min-width: 200px;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 10px;
+        box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.50);
+        grid-template-columns: 40px 1fr;
+        border-radius: 4px;
+
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+      }
+
+      .channel-pp:hover .profile-tip{
+        opacity: 1;
+      }
+
+      .pp-tip {
+        width: 45px;
+        border-radius: 50px;
+      }
+
+      .profile-tip-column {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: center;
+      }
+
+      .author {
+        font-family: Roboto, Arial;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      .subscriber-number {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+      }
